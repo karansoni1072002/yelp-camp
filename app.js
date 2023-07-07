@@ -140,9 +140,6 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
-
-
-
 app.all('*', (req, res, next) => {
     next(new ExpressError('Page Not Found', 404))
 })
